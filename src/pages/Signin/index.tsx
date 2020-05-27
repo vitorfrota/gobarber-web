@@ -29,12 +29,14 @@ const SignIn: React.FC = () => (
         <Button type="submit">Entrar</Button>
         <a href="forgot">Esqueci minha senha</a>
       </form>
-        <a href="#">
-          <FiLogIn />
-          Criar conta</a>
+      <a href="#">
+        <FiLogIn />
+        Criar conta
+
+      </a>
     </Content>
     <Background />
   </Container>
-)
+);
 
 export default SignIn;
