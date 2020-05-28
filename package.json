@@ -19,6 +19,7 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
     "typescript": "^3.9.3",
+    "uuidv4": "^6.1.0",
     "yup": "^0.29.1"
   },
   "scripts": {
