@@ -3,41 +3,38 @@ import { FiAlertCircle, FiXCircle } from 'react-icons/fi';
 
 import { Container, Toast } from './styles';
 
-const ToastContainer: React.FC = () => {
-  const a = '';
-  return (
-    <Container>
-      <Toast hasDescription>
-        <FiAlertCircle />
-        <div>
-          <strong>Aconteceu um erro</strong>
-          <p>Não foi possível fazer isso ai man</p>
-        </div>
-        <button type="button">
-          <FiXCircle size={18} />
-        </button>
-      </Toast>
-      <Toast type="success" hasDescription={false}>
-        <FiAlertCircle />
-        <div>
-          <strong>Aconteceu um erro</strong>
-        </div>
-        <button type="button">
-          <FiXCircle size={18} />
-        </button>
-      </Toast>
-      <Toast type="error" hasDescription>
-        <FiAlertCircle />
-        <div>
-          <strong>Aconteceu um erro</strong>
-          <p>Não foi possível fazer isso ai man</p>
-        </div>
-        <button type="button">
-          <FiXCircle size={18} />
-        </button>
-      </Toast>
-    </Container>
-  );
-};
+const ToastContainer: React.FC = () => (
+  <Container>
+    <Toast hasDescription>
+      <FiAlertCircle />
+      <div>
+        <strong>Aconteceu um erro</strong>
+        <p>Não foi possível fazer isso ai man</p>
+      </div>
+      <button type="button">
+        <FiXCircle size={18} />
+      </button>
+    </Toast>
+    <Toast type="success" hasDescription={false}>
+      <FiAlertCircle />
+      <div>
+        <strong>Aconteceu um erro</strong>
+      </div>
+      <button type="button">
+        <FiXCircle size={18} />
+      </button>
+    </Toast>
+    <Toast type="error" hasDescription>
+      <FiAlertCircle />
+      <div>
+        <strong>Aconteceu um erro</strong>
+        <p>Não foi possível fazer isso ai man</p>
+      </div>
+      <button type="button">
+        <FiXCircle size={18} />
+      </button>
+    </Toast>
+  </Container>
+);
 
 export default ToastContainer;
